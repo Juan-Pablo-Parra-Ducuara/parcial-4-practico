@@ -1,127 +1,197 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oficina de Pendientes Tecnicos</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --ink: #1c1d22;
-        --muted: #5f6470;
-        --paper: #fffaf2;
-        --panel: #ffffff;
-        --accent: #007c89;
-        --accent-strong: #005d66;
-        --line: #d8d0c2;
-        --warning: #f0b429;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oficina de Pendientes Tecnicos</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1c1d22;
+      --muted: #5f6470;
+      --paper: #fffaf2;
+      --panel: #ffffff;
+      --accent: #007c89;
+      --accent-strong: #005d66;
+      --line: #d8d0c2;
+      --warning: #f0b429;
+    }
 
-      body {
-        margin: 0;
-        color: var(--ink);
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--paper);
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      header {
-        padding: 64px 24px 40px;
-        background: #e9f7f8;
-        border-bottom: 1px solid var(--line);
-      }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--paper);
+    }
 
-      main {
-        width: min(960px, calc(100% - 32px));
-        margin: 0 auto;
-        padding: 32px 0 56px;
-      }
+    header {
+      padding: 64px 24px 40px;
+      background: #e9f7f8;
+      border-bottom: 1px solid var(--line);
+    }
 
-      h1,
-      h2,
-      h3,
-      p {
-        margin-top: 0;
-      }
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
 
-      h1 {
-        max-width: 780px;
-        margin-bottom: 12px;
-        font-size: 40px;
-        line-height: 1.1;
-      }
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
 
-      .intro {
-        max-width: 680px;
-        color: var(--muted);
-        font-size: 18px;
-        line-height: 1.6;
-      }
+    h1 {
+      max-width: 780px;
+      margin-bottom: 12px;
+      font-size: 40px;
+      line-height: 1.1;
+    }
 
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 24px;
-      }
+    .intro {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-      button,
-      .button {
-        border: 0;
-        border-radius: 6px;
-        padding: 12px 16px;
-        color: #ffffff;
-        background: var(--accent);
-        font-weight: 700;
-        cursor: pointer;
-      }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
 
-      button:hover,
-      .button:hover {
-        background: var(--accent-strong);
-      }
+    button,
+    .button {
+      border: 0;
+      border-radius: 6px;
+      padding: 12px 16px;
+      color: #ffffff;
+      background: var(--accent);
+      font-weight: 700;
+      cursor: pointer;
+    }
 
-      section {
-        margin-top: 32px;
-      }
+    button:hover,
+    .button:hover {
+      background: var(--accent-strong);
+    }
 
-      .notice {
-        padding: 16px;
-        border: 1px solid var(--line);
-        border-left: 6px solid var(--warning);
-        border-radius: 6px;
-        background: var(--panel);
-      }
+    section {
+      margin-top: 32px;
+    }
 
-      footer {
-        padding: 24px;
-        text-align: center;
-        border-top: 1px solid var(--line);
-        background: #ffffff;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Centro de Pendientes Técnicos</h1>
-      <p class="intro">Tramitamos explicaciones preventivas para incidentes que todavía nadie entiende.</p>
-      <div class="actions">
-        <button id="boton-hero" type="button">Pedir una explicación</button>
-      </div>
-    </header>
+    .notice {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--warning);
+      border-radius: 6px;
+      background: var(--panel);
+    }
 
-    <main>
-      <section class="notice" aria-labelledby="aviso-inicial">
-        <h2 id="aviso-inicial">Aviso institucional</h2>
-        <p>Esta página es el punto de partida del examen. Cambia únicamente lo solicitado en cada misión.</p>
+    footer {
+      padding: 24px;
+      text-align: center;
+      border-top: 1px solid var(--line);
+      background: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Oficina Nacional de Excusas Técnicas</h1>
+    <p class="intro">Donde cada bug encuentra una explicación convincente.</p>
+    <div class="actions">
+      <button id="boton-hero" type="button">Solicitar excusa urgente</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="notice" aria-labelledby="aviso-inicial">
+      <h2 id="aviso-inicial">Aviso institucional</h2>
+      <p>Esta página es el punto de partida del examen. Cambia únicamente lo solicitado en cada misión.</p>
+    </section>
+          <section id="catalogo-excusas">
+        <h2>Catálogo de excusas aprobadas</h2>
+                <p class="catalogo-nota">Todas las excusas fueron revisadas por el comité de despliegues dudosos.</p>
+
+        <article class="excusa-card">
+          <h3>El servidor estaba reflexionando</h3>
+          <p>La respuesta tardó porque el servidor necesitaba pensar en sus decisiones.</p>
+          <span>Gravedad: media</span>
+        </article>
+
+        <article class="excusa-card">
+          <h3>Funciona en mi máquina</h3>
+          <p>El comportamiento fue validado en un entorno emocionalmente estable.</p>
+          <span>Gravedad: clásica</span>
+        </article>
+
+        <article class="excusa-card">
+          <h3>El CSS tomó decisiones propias</h3>
+          <p>La interfaz interpretó la libertad creativa de una forma inesperada.</p>
+          <span>Gravedad: visual</span>
+        </article>
+
+        <article class="excusa-card">
+          <h3>Producción no estaba emocionalmente preparada</h3>
+          <p>El despliegue llegó antes de que producción pudiera procesar el cambio.</p>
+          <span>Gravedad: urgente</span>
+        </article>
       </section>
-    </main>
+            <form id="formulario-excusa">
+        <h2>Solicitud de excusa técnica</h2>
 
-    <footer>
-      <button id="boton-envio-rapido" type="button">Enbiar excusa</button>
-    </footer>
-  </body>
+        <label>
+          Nombre
+          <input type="text" name="nombre" required>
+        </label>
+
+        <label>
+          Tipo de problema
+          <select name="tipo-problema" required>
+            <option value="">Selecciona una opción</option>
+            <option value="bug">Bug misterioso</option>
+            <option value="deploy">Deploy dramático</option>
+            <option value="css">CSS rebelde</option>
+          </select>
+        </label>
+
+        <label>
+          Nivel de urgencia
+          <select name="nivel-urgencia" required>
+            <option value="">Selecciona una opción</option>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </label>
+
+        <label>
+          Descripción del desastre
+          <textarea name="descripcion-desastre" required></textarea>
+        </label>
+
+        <button type="submit">Enviar excusa al comité</button>
+      </form>
+            <section id="version-final">
+        <h2>Versión 1.0.0</h2>
+        <p>La versión está lista para revisión.</p>
+      </section>
+  </main>
+
+  <footer>
+    <button id="boton-envio-rapido" type="button">Enbiar excusa</button>
+  </footer>
+</body>
+
 </html>
